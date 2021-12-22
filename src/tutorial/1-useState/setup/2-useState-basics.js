@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+// useState - function
 
 const UseStateBasics = () => {
   // console.log(useState());
+  // console.log(useState('hello world'));
   // const value = useState()[0];
   // const handler = useState()[1];
   // console.log(value, handler);
