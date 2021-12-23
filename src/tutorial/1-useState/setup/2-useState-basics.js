@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-// useState - function
+//use 
+// component name must be uppercase
+// must be in the function/ component boby
+// cannot call conditionally
 
 const UseStateBasics = () => {
   // console.log(useState());
   // console.log(useState('hello world'));
-  // const value = useState()[0];
-  // const handler = useState()[1];
+  // const value = useState(1)[0];
+  // const handler = useState(1)[1];
   // console.log(value, handler);
 
   const [text, setText] = useState('random title');
