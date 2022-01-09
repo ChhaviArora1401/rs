@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-// useState - function
+// starts with use 
+// component name must be uppercase
+// invoke inside function/component boby
+// don't call hooks conditionally
 
 const UseStateBasics = () => {
   // console.log(useState());
@@ -9,7 +12,6 @@ const UseStateBasics = () => {
   // console.log(value, handler);
 
   const [text, setText] = useState('random title');
-
   const handleClick = () => {
     if (text === 'random title') {
       setText('hello world');
@@ -19,12 +21,12 @@ const UseStateBasics = () => {
   };
 
   return (
-    <React.Fragment>
+    <div className="example">
       <h1>{text}</h1>
-      <button className="btn" onClick={handleClick}>
+      <button type="button" className="btn" onClick={handleClick}>
         change title
       </button>
-    </React.Fragment>
+    </div>
   );
 };
 
